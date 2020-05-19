@@ -1,20 +1,24 @@
 .Post {
-    width: 100px;
-    padding: 16px;
-    text-align: center;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
-    margin: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
+  width: 250px;
+  backface-visibility: hidden;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #eaf0f6;
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
 }
 
 .Post:hover,
 .Post:active {
-    background-color: #C0DDF5;
+  background-color: #c0ddf5;
 }
 
 .Author {
-    margin: 16px 0;
-    color: #ccc;
+  margin: 16px 0;
+  color: #33475b;
 }
