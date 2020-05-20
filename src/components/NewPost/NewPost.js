@@ -10,16 +10,14 @@ class NewPost extends Component {
     author: 'Ezra',
   };
   postDataHandle = () => {
-    const post = {
+    const data = {
       title: this.state.title,
       body: this.state.content,
       author: this.state.author,
     };
-    axios
-      .post('https://jsonplaceholder.typicode.com/posts', post)
-      .then((res) => {
-        console.log(res);
-      });
+    axios.post('/posts', data).then((res) => {
+      console.log(res);
+    });
   };
 
   render() {
